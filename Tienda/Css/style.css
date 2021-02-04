@@ -1,0 +1,263 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+#app header{
+  border-bottom: 1px solid #33333314;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  position: fixed;
+  width: 100%;
+  background: white;
+} 
+
+header #menu-hamburguesa{
+  display: inline-block;
+  cursor: pointer;
+}
+
+header .bar1, header .bar2, header .bar3{
+  width: 35px;
+  height: 5px;
+  background: #333;
+  margin: 6px 0;
+}
+
+/* Encabezado end*/
+
+#app #grid{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 140px;
+  /*! padding: 25px; */
+}
+
+#grid .items{
+  /*! border-bottom: 1px solid #0d0c0c21; */
+  height: auto;
+  width: 80%;
+  margin-bottom: 70px;
+  margin: 5px;
+  margin-bottom: 70px;
+}
+
+#grid .items .items-foto{
+  height: 180px;
+  /*! border: 1px solid #15141400; */
+  border: 1px solid gray;
+  height: 237px;
+}
+
+
+#grid .items h3{
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+/* GRID end*/
+
+
+#app #inform{
+  padding: 20px;
+  background: black;
+  height: 330px;
+}
+
+#inform h2{
+  height: 40px;
+  font-size: 1.3em;
+  padding: 5px;
+  margin-top: 30px;
+  color: white;
+}
+
+#inform span{
+  color: white;
+}
+
+#inform input{
+  border:0;
+  padding: 15px;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+#inform button{
+  border: 0;
+  width: 100px;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px;
+  background: red;
+  color: white;
+  font-size: 1.5em;
+}
+
+/* inform end*/
+
+#contact-form #form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin-top: 10px;
+}
+
+::placeholder{
+  text-align: center;
+}
+
+#contact-form #form input, textarea{
+  width: 260px;
+  margin-bottom: 15px;
+  border: 1px solid #1311111f;
+  padding: 12px;
+}
+#contact-form #form button{
+  width: 120px;
+  border: 0;
+  padding: 8px;
+  background: #333;
+  color: white;
+  border:1px solid black;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#contact-form #about{
+  border-top: 1px solid #80808030;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+#about #lista{
+  list-style: none;
+  border-bottom: 1px solid #80808045;
+}
+
+#about #lista li{
+  text-align: center;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+#about #lista li a{
+  color: black; 
+}
+
+/* end contact-form */
+
+
+footer{
+  padding: 5px;
+  background: black;
+}
+footer #pie{
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer #pie span{
+  color: white;
+  font-size: 1.0em;
+}
+
+
+/* Screen of 768px */
+
+@media screen and (min-width: 768px){
+ 
+  #app #grid{
+    flex-direction: row;
+  }
+  #app #grid .items{ 
+    width: calc((100% - 20px) / 2);
+    height: auto;
+  }
+  
+  #app #grid .items .items-foto{
+    height: 358px;
+  } 
+    
+  #grid .items h3{
+    padding-top: 21px;
+    font-size: 1.6rem;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+  
+  #app{
+    display: flex;
+    justify-content: center;
+  }
+  #app #wrapper{
+    /*! border: 1px solid red; */
+    width: 80%;
+  }
+  
+  #app #grid .items{
+    width: calc((100% - 40px ) / 4);
+    margin-bottom: 30px;
+  }
+  
+  #app #grid .items .items-foto{
+    height: 200px;
+  } 
+  
+  #grid .items h3{
+    padding-top: 15px;
+    font-size: 1.1rem;
+  }
+  
+  #app #contact-form{
+    background: #27292b00;
+    display: flex;
+    justify-content: space-around
+  }
+  #contact-form #form{
+    width: 50%;
+    margin-top: 0;
+  }
+  
+  #contact-form #about{
+    border-left: 1px solid #00000017;
+    width: 50%;
+  }
+  
+  #about #lista li{
+    margin-bottom: 20px;
+  }
+  
+  #app #inform input::placeholder{
+    text-align: left;   
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
