@@ -10,7 +10,7 @@ class Conector
 			array(
 				"server" => '127.0.0.1',
 				"user" => 'root',
-				"password" => "Cesar_25",
+				"password" => "xxxx",
 				"Bd" => 'Contacts'
 			)
 		);
